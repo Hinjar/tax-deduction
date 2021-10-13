@@ -1,0 +1,48 @@
+.input{
+  width: 100%;
+  label{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  input{
+    padding: 8px 10px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #DFE3E6;
+    border-radius: 3px;
+    width: 100%;
+    transition: .2s all ease-in-out;
+    outline: none;
+
+    &::placeholder{
+      color: #BEC5CC;
+    }
+
+    &:hover{
+      border: 1px solid #000000;
+    }
+
+    &:focus{
+      border: 1px solid #DFE3E6;
+    }
+  }
+}
+
+.inputError{
+  input{
+    border: 1px solid #EA0029;
+    color: #EA0029;
+  }
+  p{
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 4px;
+    color: #EA0029;
+  }
+}
+

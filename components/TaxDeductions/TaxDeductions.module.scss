@@ -1,0 +1,94 @@
+.title{
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 16px;
+  line-height: 40px;
+  @media (max-width: 320px) {
+    font-size: 18px;
+  }
+}
+
+.topBlock{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-right: 22px;
+  margin-right: -22px;
+  @media (max-width: 450px) {
+    padding-right: 16px;
+    margin-right: -16px;
+  }
+}
+
+.taxDeduction{
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 450px) {
+   height: 100%;
+   justify-content: space-between;
+  }
+}
+
+.text{
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+  margin-bottom: 24px;
+
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+}
+
+.calculateBtn{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 8px 0 16px ;
+  outline: none;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: #EA0029;
+  cursor: pointer;
+  &:hover{
+    color: #F53A31;
+  }
+
+  &:focus{
+    color: #EA0029;
+  }
+}
+
+.tagContainer, .decreaseBlock{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tagContainer{
+  width: 146px;
+
+  @media(max-width: 320px) {
+    margin-top: 24px;
+    width: 138px;
+  }
+}
+
+.decreaseBlock{
+  width: 290px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+
+  @media(max-width: 320px) {
+    display: block;
+  }
+}
+.checkboxRightPartLabel{
+  color: #9a9a9a;
+}
+
+.daxCheckBox{
+  border-bottom: 1px solid  #DFE3E6;
+  padding: 16px 0;
+}

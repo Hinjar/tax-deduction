@@ -1,0 +1,66 @@
+.formCheckbox{
+  position: relative;
+  display: block;
+
+  input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+
+    & + label {
+      position: relative;
+      display: inline-block;
+      padding: 6px 10px 6px 30px;
+      cursor: pointer;
+
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin: -10px 0 0;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #DFE3E6;
+        border-radius: 6px;
+        background-size: 72px auto;
+        -webkit-background-size: 72px auto;
+        -moz-background-size: 72px auto;
+        transition: .2s all linear;
+      }
+    }
+
+    &:hover + label{
+      &:before{
+        border: 1px solid #000000;
+
+      }
+    }
+
+    &:checked + label {
+      &:before {
+        background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+        background-image: url("../../public/checked.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &:disabled {
+      & + label {
+        cursor: not-allowed;
+
+        &:before {
+          background-color: #BEC5CC;
+          border: 0;
+        }
+      }
+
+      &:checked + label {
+        &:before {
+          background-position: 60px 0;
+        }
+      }
+    }
+  }
+}

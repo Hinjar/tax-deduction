@@ -1,0 +1,26 @@
+.tag{
+  padding: 6px 12px;
+  line-height: 24px;
+  background-color: #EEF0F2;
+  color:     #333333;
+  border-radius: 50px;
+  transition: .2s all linear;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+
+  &:hover{
+    background: #DFE3E6;
+    color:     #333333;
+  }
+
+  &:focus{
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    color: #FFFFFF;
+  }
+}
+
+.tagActive{
+  background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+  color: #FFFFFF;
+}
