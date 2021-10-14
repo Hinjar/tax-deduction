@@ -9,13 +9,11 @@
 }
 
 .topBlock{
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding-right: 22px;
-  margin-right: -22px;
   @media (max-width: 450px) {
     padding-right: 16px;
     margin-right: -16px;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 }
 
