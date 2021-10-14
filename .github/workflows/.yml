@@ -34,3 +34,4 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.BUILD_TOKEN }}
           BRANCH: gh-pages
           FOLDER: out
+          CLEAN: true
